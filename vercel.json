@@ -1,86 +1,14 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    },
-    {
-      "source": "/media/:path*",
-      "destination": "/media/:path*"
-    },
-    {
-      "source": "/<^/(.*)",
-      "destination": "/<^/"
-    },
-    {
-      "source": "/cart",
-      "destination": "/"
-    },
-    {
-      "source": "/checkout-success",
-      "destination": "/"
-    },
-    {
-      "source": "/account/:id",
-      "destination": "/"
-    },
-    {
-      "source": "/orders/:id",
-      "destination": "/"
-    },
-    {
-      "source": "/products/find/:id",
-      "destination": "/"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/"
-    }
-  ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/media/(.*)",
-      "dest": "/media/index.js"
-    },
-    {
-      "src": "/<^/(.*)",
-      "dest": "/<^.js"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/images/index.js"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/index.js"
-    },
-    {
-      "src": "/cart",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/checkout-success",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/account/:id",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/orders/:id",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/products/find/:id",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/:path*",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/signin", "dest": "/SignIn" },
+    { "src": "/signup", "dest": "/SignUp" },
+    { "src": "/cart", "dest": "/Cart" },
+    { "src": "/checkout-success", "dest": "/CheckoutSuccess" },
+    { "src": "/account/:id", "dest": "/Profile" },
+    { "src": "/orders/:id", "dest": "/Orders" },
+    { "src": "/products/*", "dest": "/SearchPage" },
+    { "src": "/products/find/:id", "dest": "/ProductDetail" },
+    { "src": "/.*", "dest": "/NotFoundPage" }
   ]
 }

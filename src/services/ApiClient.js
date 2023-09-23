@@ -3,6 +3,7 @@ import axios from "axios";
 const storageData = JSON.parse(localStorage.getItem("persist:root") ?? "{}");
 const currentUser = storageData.user ? JSON.parse(storageData.user) : null;
 const TOKEN = currentUser?.currentUser?.accesToken || "";
+// export const baseURL = "http://localhost:5000/api/";
 export const baseURL = "https://mojo-app-727ae45624d6.herokuapp.com/api";
 
 

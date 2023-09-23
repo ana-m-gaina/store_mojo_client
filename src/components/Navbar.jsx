@@ -102,7 +102,7 @@ export const Navbar = () => {
   };
 
   const { category } = useParams();
-  const pages = ["women", "men", "teen", "home"];
+  const pages = ["Women", "Men", "Teen", "Home"];
   const settings = ["Account", "Orders", "Logout"];
 
   return (
@@ -147,6 +147,7 @@ export const Navbar = () => {
               <MenuItem key={page}>
                 <Typography
                   component={Link}
+                  onClose={handleCloseNavMenu}
                   to={`/products?category=${page}`}
                   textAlign="center"
                 >

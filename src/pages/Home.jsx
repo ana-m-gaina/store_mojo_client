@@ -9,11 +9,11 @@ import useProducts from "../hooks/useProducts";
 const promotions = [
   {
     title: "Office Wear",
-    url: ".//public/images/promotions/2704_looks_oficina.webp",
+    url: "/images/promotions/2704_looks_oficina.webp",
   },
   {
     title: "Minimalism",
-    url: ".//public/images/promotions/he_interior_nn_2108.webp",
+    url: "/images/promotions/he_interior_nn_2108.webp",
   },
 ];
 

@@ -72,13 +72,13 @@ export const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-   const handleSearchTextChange = event => {
-     setSearchText(event.target.value);
-   };
+  const handleSearchTextChange = event => {
+    setSearchText(event.target.value);
+  };
 
-    const handleSearch = () => {
-      navigate(`/products/search?text=${searchText}`);
-    };
+  const handleSearch = () => {
+    navigate(`/products/search?text=${searchText}`);
+  };
 
   const handleOpenNavMenu = event => {
     setAnchorElNav(event.currentTarget);
@@ -145,14 +145,16 @@ export const Navbar = () => {
           >
             {pages.map(page => (
               <MenuItem key={page}>
-                <Typography
+                <Button
                   component={Link}
                   onClose={handleCloseNavMenu}
                   to={`/products?category=${page}`}
                   textAlign="center"
+                  color="primary"
+                  sx={{ textDecoration: "none" }}
                 >
                   {page}
-                </Typography>
+                </Button>
               </MenuItem>
             ))}
           </Menu>

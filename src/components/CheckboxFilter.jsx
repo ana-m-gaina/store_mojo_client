@@ -27,7 +27,9 @@ export const CheckboxFilter = ({ name, choices, filters, handleClick }) => {
               control={<Checkbox color="secondary" />}
               onChange={e => handleClick(e, name)}
               checked={
-               filters[name].includes(choice)
+                name !== "categories"
+                  ? filters[name].includes(choice)
+                  : filters[name]==choice
               }
             />
           ))}

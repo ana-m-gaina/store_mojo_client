@@ -102,7 +102,7 @@ export const Navbar = () => {
   };
 
   const { category } = useParams();
-  const pages = ["Women", "Men", "Teen", "Home"];
+  const pages = ["women", "men", "teen", "home"];
   const settings = ["Account", "Orders", "Logout"];
 
   return (
@@ -153,7 +153,7 @@ export const Navbar = () => {
                   color="primary"
                   sx={{ textDecoration: "none" }}
                 >
-                  {page}
+                  {page.toUpperCase()}
                 </Button>
               </MenuItem>
             ))}

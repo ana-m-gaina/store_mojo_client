@@ -13,6 +13,7 @@ import { Profile } from "./pages/Profile";
 import { SearchPage } from "./pages/SearchPage";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import { CheckoutFailed } from "./pages/CheckoutFailed";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route path="signup" element={user ? <Home /> : <SignUp />} />
             <Route path="cart" element={<Cart />} />
             <Route path="checkout-success" element={<CheckoutSuccess />} />
+            <Route path="checkout-failed" element={<CheckoutFailed />} />
             <Route path="account/:id" element={<Profile />} />
             <Route path="orders/:id" element={<Orders />} />
             <Route path="products/*" element={<SearchPage />} />

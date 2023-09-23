@@ -37,7 +37,6 @@ export const Carousel = () => {
       sx={{
         position: "relative",
         width: "100vW",
-        backgroundColor: "yellow",
         "&:hover": {
           "& img": {
             filter: "brightness(100%)",

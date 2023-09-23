@@ -44,7 +44,7 @@ export const Orders = () => {
       ) : (
         <Grid container spacing={3} p={3}>
           {data.map(order => (
-            <Grid item xs={4} key={order._id}>
+            <Grid item xs={12} sm={6} md={4} key={order._id}>
               <OrderCard order={order} />
             </Grid>
           ))}

@@ -149,7 +149,6 @@ export const Navbar = () => {
                   component={Link}
                   onClose={handleCloseNavMenu}
                   to={`/products?category=${page}`}
-                  textAlign="center"
                   color="primary"
                   sx={{ textDecoration: "none" }}
                 >

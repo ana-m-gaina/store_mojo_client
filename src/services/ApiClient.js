@@ -13,23 +13,23 @@ export const axiosInstance = axios.create({
 });
 
 
-// Request interceptor to log outgoing requests
-axiosInstance.interceptors.request.use((config) => {
-  console.log("Outgoing Request:", config);
-  return config;
-});
+// // Request interceptor to log outgoing requests
+// axiosInstance.interceptors.request.use((config) => {
+//   console.log("Outgoing Request:", config);
+//   return config;
+// });
 
-// Response interceptor to log incoming responses
-axiosInstance.interceptors.response.use(
-  (response) => {
-    console.log("Incoming Response:", response);
-    return response;
-  },
-  (error) => {
-    console.error("Error Response:", error);
-    return Promise.reject(error);
-  }
-);
+// // Response interceptor to log incoming responses
+// axiosInstance.interceptors.response.use(
+//   (response) => {
+//     console.log("Incoming Response:", response);
+//     return response;
+//   },
+//   (error) => {
+//     console.error("Error Response:", error);
+//     return Promise.reject(error);
+//   }
+// );
 
 
 

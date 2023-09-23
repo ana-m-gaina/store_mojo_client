@@ -27,13 +27,13 @@ export const FilterSideMenu = ({ filters, setFilters, filterChoices }) => {
   };
   const filterNames = ["sizes", "colors"];
 
-  const handleRadioClick = (e, name) => {
+  const handleRadioClick = (e) => {
     const clickedValue = e.target.value;
-    console.log(clickedValue);
     setFilters(prevFilters => ({
       ...prevFilters,
-      [name]: [clickedValue],
+      ["categories"]: clickedValue,
     }));
+    console.log(filters)
     searchParams.set("category", clickedValue);
     window.history.pushState({}, "", `?${searchParams.toString()}`);
   };

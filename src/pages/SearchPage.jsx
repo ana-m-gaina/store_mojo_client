@@ -15,19 +15,22 @@ export const SearchPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
-  const category = searchParams.get("category");
+  let category = searchParams.get("category");
   const searchText = searchParams.get("text");
-  console.log(category, searchText);
-  const { data, isLoading, error } = useProducts(category, searchText);
-
-  const [filters, setFilters] = useState({
+   const [filters, setFilters] = useState({
     categories: category || "",
     sizes: [],
     colors: [],
   });
 
+   const { data, isLoading, error } = useProducts(
+     filters.categories,
+     searchText
+   );
+
   useEffect(() => {
     setFilters({ categories: category || "", sizes: [], colors: [] });
+    console.log(filters);
   }, [category, searchText]);
 
   const colors = [];

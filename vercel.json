@@ -1,14 +1,3 @@
 {
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/signin", "dest": "/SignIn" },
-    { "src": "/signup", "dest": "/SignUp" },
-    { "src": "/cart", "dest": "/Cart" },
-    { "src": "/checkout-success", "dest": "/CheckoutSuccess" },
-    { "src": "/account/:id", "dest": "/Profile" },
-    { "src": "/orders/:id", "dest": "/Orders" },
-    { "src": "/products/*", "dest": "/SearchPage" },
-    { "src": "/products/find/:id", "dest": "/ProductDetail" },
-    { "src": "/.*", "dest": "/NotFoundPage" }
-  ]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }

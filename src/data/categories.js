@@ -3,7 +3,7 @@ export const categories = [
     _id: 1,
     title: "women ",
     alt: "image1",
-    url: "../public/images/categories/mm_woman_2205.jpg",
+    url: "/images/categories/mm_woman_2205.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
   },
@@ -11,7 +11,7 @@ export const categories = [
     _id: 2,
     title: "men",
     alt: "image1",
-    url: "../public/images/categories/he_otraslineas_0806_V2.jpg",
+    url: "/images/categories/he_otraslineas_0806_V2.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
   },
@@ -20,7 +20,7 @@ export const categories = [
     _id: 3,
     title: "teen",
     alt: "image1",
-    url: "../public/images/categories/teen_otraslineas_0603.jpg",
+    url: "/images/categories/teen_otraslineas_0603.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
   },
@@ -28,7 +28,7 @@ export const categories = [
     _id: 4,
     title: "home",
     alt: "image1",
-    url: "../public/images/categories/casa_otraslineas_0603.jpg",
+    url: "/images/categories/casa_otraslineas_0603.jpg",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
   },

@@ -5,7 +5,7 @@ export const heroData = [
     alt: "image1",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
-    url: "../public/images/hero/hero01.jpg",
+    url: "/images/hero/hero01.jpg",
   },
 
   {
@@ -14,7 +14,7 @@ export const heroData = [
     alt: "image2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
-    url: "../public/images/hero/hero02.jpg",
+    url: "/images/hero/hero02.jpg",
   },
 
   {
@@ -23,7 +23,7 @@ export const heroData = [
     alt: "image3",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ad!",
-    url: "../public/images/hero/hero03.jpg",
+    url: "/images/hero/hero03.jpg",
   },
 
 ];

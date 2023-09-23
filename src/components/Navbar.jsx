@@ -147,7 +147,7 @@ export const Navbar = () => {
               <MenuItem key={page}>
                 <Button
                   component={Link}
-                  onClose={handleCloseNavMenu}
+                  onClick={handleCloseNavMenu}
                   to={`/products?category=${page}`}
                   color="primary"
                   sx={{ textDecoration: "none" }}

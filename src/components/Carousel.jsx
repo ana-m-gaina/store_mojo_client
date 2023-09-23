@@ -36,6 +36,7 @@ export const Carousel = () => {
     <Box
       sx={{
         position: "relative",
+        overflow:"hidden",
         width: "100vW",
         "&:hover": {
           "& img": {

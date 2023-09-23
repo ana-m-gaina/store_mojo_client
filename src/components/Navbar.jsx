@@ -186,7 +186,6 @@ export const Navbar = () => {
           align="center"
           noWrap
           sx={{
-            display: { xs: "none", sm: "flex" },
             flex: 1,
             justifyContent: { xs: "start", sm: "center" },
             textDecoration: "none",
